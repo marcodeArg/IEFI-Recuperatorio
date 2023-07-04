@@ -1,0 +1,21 @@
+C:\Users\mec\source\repos\TOOLS_CBA\bin\Debug\TOOLS_CBA.exe.config
+C:\Users\mec\source\repos\TOOLS_CBA\bin\Debug\TOOLS_CBA.exe
+C:\Users\mec\source\repos\TOOLS_CBA\bin\Debug\TOOLS_CBA.pdb
+C:\Users\mec\source\repos\TOOLS_CBA\obj\Debug\TOOLS_CBA.csprojAssemblyReference.cache
+C:\Users\mec\source\repos\TOOLS_CBA\obj\Debug\TOOLS_CBA.Form1.resources
+C:\Users\mec\source\repos\TOOLS_CBA\obj\Debug\TOOLS_CBA.Properties.Resources.resources
+C:\Users\mec\source\repos\TOOLS_CBA\obj\Debug\TOOLS_CBA.csproj.GenerateResource.cache
+C:\Users\mec\source\repos\TOOLS_CBA\obj\Debug\TOOLS_CBA.csproj.CoreCompileInputs.cache
+C:\Users\mec\source\repos\TOOLS_CBA\obj\Debug\TOOLS_CBA.exe
+C:\Users\mec\source\repos\TOOLS_CBA\obj\Debug\TOOLS_CBA.pdb
+C:\Users\mrc\Desktop\iefi RECUPERATORIO\iefi-main\TOOLS_CBA (ALUMNO)\bin\Debug\TOOLS_CBA.exe.config
+C:\Users\mrc\Desktop\iefi RECUPERATORIO\iefi-main\TOOLS_CBA (ALUMNO)\bin\Debug\TOOLS_CBA.exe
+C:\Users\mrc\Desktop\iefi RECUPERATORIO\iefi-main\TOOLS_CBA (ALUMNO)\bin\Debug\TOOLS_CBA.pdb
+C:\Users\mrc\Desktop\iefi RECUPERATORIO\iefi-main\TOOLS_CBA (ALUMNO)\obj\Debug\TOOLS_CBA.csproj.AssemblyReference.cache
+C:\Users\mrc\Desktop\iefi RECUPERATORIO\iefi-main\TOOLS_CBA (ALUMNO)\obj\Debug\TOOLS_CBA.csproj.SuggestedBindingRedirects.cache
+C:\Users\mrc\Desktop\iefi RECUPERATORIO\iefi-main\TOOLS_CBA (ALUMNO)\obj\Debug\TOOLS_CBA.Form1.resources
+C:\Users\mrc\Desktop\iefi RECUPERATORIO\iefi-main\TOOLS_CBA (ALUMNO)\obj\Debug\TOOLS_CBA.Properties.Resources.resources
+C:\Users\mrc\Desktop\iefi RECUPERATORIO\iefi-main\TOOLS_CBA (ALUMNO)\obj\Debug\TOOLS_CBA.csproj.GenerateResource.cache
+C:\Users\mrc\Desktop\iefi RECUPERATORIO\iefi-main\TOOLS_CBA (ALUMNO)\obj\Debug\TOOLS_CBA.csproj.CoreCompileInputs.cache
+C:\Users\mrc\Desktop\iefi RECUPERATORIO\iefi-main\TOOLS_CBA (ALUMNO)\obj\Debug\TOOLS_CBA.exe
+C:\Users\mrc\Desktop\iefi RECUPERATORIO\iefi-main\TOOLS_CBA (ALUMNO)\obj\Debug\TOOLS_CBA.pdb
