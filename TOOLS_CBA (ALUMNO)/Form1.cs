@@ -95,15 +95,31 @@ namespace TOOLS_CBA
                 // Columnas del picture box
                 for (x = 0; x < pictureBox1.Width - 30; x += 30)
                 {
-                    estanterias.DrawRectangle(Pens.Black, x, y, 60, 40);
+                    // BORREN ALGUNA DE LAS DOS OPCIONES
 
-                    foreach (DataRow filaEstanteria in tablaEstanterias.Rows)
+                    //OPCION 1
+
+                    //estanterias.DrawRectangle(Pens.Black, x, y, 32, 4);
+                    //foreach (DataRow filaEstanteria in tablaEstanterias.Rows)
+                    //{
+
+                    //    if ((int)filaEstanteria["producto"] == codigo && (int)filaEstanteria["estanteria"] == numEstanteria)
+                    //    {
+                    //        estanterias.FillRectangle(Brushes.Green, x, y, 30, 42);
+                    //    }
+                    //}
+
+
+                    // OPCION 2
+
+                    DataRow fila = objEst.GetFila(codigo, numEstanteria);
+                    if (fila != null)
                     {
-
-                        if ((int)filaEstanteria["producto"] == codigo && (int)filaEstanteria["estanteria"] == numEstanteria)
-                        {
-                            estanterias.FillRectangle(Brushes.Green, x, y, 60, 40);
-                        }
+                        estanterias.FillRectangle(Brushes.Green, x, y, 30, 42);
+                    }
+                    else
+                    {
+                        estanterias.DrawRectangle(Pens.Black, x, y, 32, 42);
                     }
 
                     estanterias.DrawString(numEstanteria.ToString(), fuente, Brushes.Black, x, y);

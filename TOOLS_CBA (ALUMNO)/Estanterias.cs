@@ -29,6 +29,20 @@ namespace TOOLS_CBA
             adaptador = new OleDbDataAdapter(comando);
             tabla = new DataTable();
             adaptador.Fill(tabla);
+
+            DataColumn[] dc = new DataColumn[2];
+            dc[0] = tabla.Columns["producto"];
+            dc[1] = tabla.Columns["estanteria"];
+            tabla.PrimaryKey = dc;
+
+        }
+
+        public DataRow GetFila(int pk1, int pk2)
+        {
+            Object[] datos = new Object[2];
+            datos[0] = pk1;
+            datos[1] = pk2;
+            return tabla.Rows.Find(datos);
         }
 
         public DataTable GetData()
