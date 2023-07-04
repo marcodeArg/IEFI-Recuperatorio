@@ -23,12 +23,21 @@ namespace TOOLS_CBA
         Productos objProd;
         Graphics estanterias;
 
+
+        private DataTable tablaEstanterias;
+        private DataTable tablaProductos;
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
             try
             {
                 objEst = new Estanterias();
                 objProd = new Productos();
+                tablaEstanterias = objEst.GetData();
+                tablaProductos = objProd.GetData();
+
+
                 estanterias = pictureBox1.CreateGraphics();
             }
             catch (Exception)
@@ -40,13 +49,6 @@ namespace TOOLS_CBA
 
         private void button1_Click(object sender, EventArgs e)
         {
-            DataTable tablaEstanterias = new DataTable();
-            DataTable tablaProductos = new DataTable();
-
-            tablaEstanterias = objEst.GetData();
-            tablaProductos = objProd.GetData();
-
-
             int codProducto = Convert.ToInt32(txtCodigo.Text);
             int stockTotal = 0;
 
@@ -69,20 +71,16 @@ namespace TOOLS_CBA
                 lblStock.Text = stockTotal.ToString();
 
 
-                Dibujar();
+                Dibujar(codProducto);
 
             }
             else
             {
                 MessageBox.Show("No existe ningun producto con esa id", "Advertencia", MessageBoxButtons.OK);
             }
-
-
-
-            
         }
 
-        public void Dibujar()
+        public void Dibujar(int codigo)
         {
             int x;
             int y;
@@ -97,11 +95,18 @@ namespace TOOLS_CBA
                 // Columnas del picture box
                 for (x = 0; x < pictureBox1.Width - 30; x += 30)
                 {
-
                     estanterias.DrawRectangle(Pens.Black, x, y, 60, 40);
 
-                    estanterias.DrawString(numEstanteria.ToString(), fuente, Brushes.Black, x, y);
+                    foreach (DataRow filaEstanteria in tablaEstanterias.Rows)
+                    {
 
+                        if ((int)filaEstanteria["producto"] == codigo && (int)filaEstanteria["estanteria"] == numEstanteria)
+                        {
+                            estanterias.FillRectangle(Brushes.Green, x, y, 60, 40);
+                        }
+                    }
+
+                    estanterias.DrawString(numEstanteria.ToString(), fuente, Brushes.Black, x, y);
                     numEstanteria++;
 
                 }

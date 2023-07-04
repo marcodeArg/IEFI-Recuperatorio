@@ -109,9 +109,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Location = new System.Drawing.Point(30, 130);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 131);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(855, 445);
+            this.pictureBox1.Size = new System.Drawing.Size(909, 445);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -119,7 +119,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(919, 610);
+            this.ClientSize = new System.Drawing.Size(933, 610);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblStock);
             this.Controls.Add(this.label4);
