@@ -32,9 +32,9 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblStock = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -74,16 +74,16 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "NOMBRE";
             // 
-            // label3
+            // lblNombre
             // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Yellow;
-            this.label3.Location = new System.Drawing.Point(159, 71);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(382, 23);
-            this.label3.TabIndex = 4;
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.Color.Yellow;
+            this.lblNombre.Location = new System.Drawing.Point(159, 71);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(382, 23);
+            this.lblNombre.TabIndex = 4;
+            this.lblNombre.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
@@ -94,16 +94,16 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "STOCK TOTAL";
             // 
-            // label5
+            // lblStock
             // 
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Yellow;
-            this.label5.Location = new System.Drawing.Point(669, 71);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 23);
-            this.label5.TabIndex = 6;
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblStock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblStock.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStock.ForeColor = System.Drawing.Color.Yellow;
+            this.lblStock.Location = new System.Drawing.Point(669, 71);
+            this.lblStock.Name = "lblStock";
+            this.lblStock.Size = new System.Drawing.Size(100, 23);
+            this.lblStock.TabIndex = 6;
+            this.lblStock.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // pictureBox1
             // 
@@ -121,9 +121,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(919, 610);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblStock);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtCodigo);
@@ -143,9 +143,9 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lblStock;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

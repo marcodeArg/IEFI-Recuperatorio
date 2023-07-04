@@ -48,8 +48,42 @@ namespace TOOLS_CBA
 
 
             int codProducto = Convert.ToInt32(txtCodigo.Text);
+            int stockTotal = 0;
 
-            // Dibujar
+
+            DataRow filaProducto;
+
+            filaProducto = objProd.GetFila(codProducto);
+            if (filaProducto != null)
+            {
+                lblNombre.Text = filaProducto["nombre"].ToString();
+
+                foreach (DataRow filaEstanterias in tablaEstanterias.Rows)
+                {
+                    if ((int)filaEstanterias["producto"] == codProducto)
+                    {
+                        stockTotal += Convert.ToInt32(filaEstanterias["stock"]);
+                    }
+                }
+
+                lblStock.Text = stockTotal.ToString();
+
+
+                Dibujar();
+
+            }
+            else
+            {
+                MessageBox.Show("No existe ningun producto con esa id", "Advertencia", MessageBoxButtons.OK);
+            }
+
+
+
+            
+        }
+
+        public void Dibujar()
+        {
             int x;
             int y;
             int numEstanteria = 1;

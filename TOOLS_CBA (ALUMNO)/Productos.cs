@@ -39,5 +39,10 @@ namespace TOOLS_CBA
             return tabla;
         }
 
+        public DataRow GetFila(int pk)
+        {
+            return tabla.Rows.Find(pk);
+        }
+
     }
 }
